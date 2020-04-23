@@ -11,9 +11,10 @@ Gem::Specification.new do |s|
   s.description = %q{Rainbows and unicorns!}
   s.summary     = %q{Okay, no unicorns. But rainbows!!}
 
-  #s.rubyforge_project = "lolcat"
-  s.add_dependency "paint", "~> 0.8.3"
-  s.add_dependency "trollop", "~> 1.16.2"
+  s.add_development_dependency "rake"
+  s.add_dependency "paint", "~> 2.1"
+  s.add_dependency "optimist", "~> 3.0.0"
+  s.add_dependency "manpages", "~> 0.6.1"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
